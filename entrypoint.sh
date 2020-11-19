@@ -1,4 +1,3 @@
-
 #!/bin/sh -l
 
 token=$1
