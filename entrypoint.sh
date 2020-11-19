@@ -1,19 +1,9 @@
 
 #!/bin/sh
 
-# check values
-if [ -z "${token}" ]; then
-    echo "error: not found token"
-    exit 1
-fi
-
-if [ -z "${branch_name}" ]; then
-   export branch_name=master
-fi
-
-if [ -z "${bot_name}" ]; then
-   export bot_name=admin-machine
-fi
+token=$1
+branch_name=$2
+bot_name=$3
 
 # initialize git
 REPO_REF="https://${bot_name}:${token}@github.com/${GITHUB_REPOSITORY}.git"

@@ -18,3 +18,7 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.token }}
+    - ${{ inputs.branch_name }}
+    - ${{ inputs.bot_name }}
