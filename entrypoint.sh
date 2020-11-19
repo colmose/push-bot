@@ -1,5 +1,5 @@
 
-#!/bin/sh
+#!/bin/sh -l
 
 token=$1
 branch_name=$2
