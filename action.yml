@@ -1,0 +1,20 @@
+
+name: "Push to a protected branch"
+description: Push into protected branches"
+branding:
+  icon: "git-merge"
+  color: purple
+inputs:
+  token:
+    required: true
+    description: 'Personal Access Token for bot user'
+  branch_name:
+    required: false
+    default: master
+    description: 'Branch to push to'
+  bot_name:
+    required: true
+    description: 'The name of the user to push with'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

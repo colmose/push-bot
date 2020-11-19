@@ -1,0 +1,14 @@
+{
+  "name": "push-with-siren-bot",
+  "version": "1.0.0",
+  "description": "Push into protected branches in Siren repos",
+  "main": "entrypoint.sh",
+  "scripts": {
+    "test": "dockerlint Dockerfile"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dockerlint": "^0.3.9"
+  }
+}
