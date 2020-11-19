@@ -5,7 +5,6 @@ token=$1
 branch_name=$2
 bot_name=$3
 
-# initialize git
 REPO_REF="https://${bot_name}:${token}@github.com/${GITHUB_REPOSITORY}.git"
 git config http.sslVerify false
 git config user.name "${bot_name}"
